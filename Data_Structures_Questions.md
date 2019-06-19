@@ -4,6 +4,8 @@ Answer the following questions for each of the data structures you implemented a
 
 1. What is the runtime complexity of `enqueue`?
 
+O(1)
+
 2. What is the runtime complexity of `dequeue`?
 
 3. What is the runtime complexity of `len`?
