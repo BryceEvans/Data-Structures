@@ -40,8 +40,12 @@ class BinarySearchTree:
             return False
         
     def get_max(self):
-        # set current value as root
-        pass
+        # If nothing to right, return value
+        if not self.right:
+            return self.value
+        # If something to the right, go right recursively
+        if self.right:
+            return self.right.get_max()
 
     def for_each(self, cb):
         pass
