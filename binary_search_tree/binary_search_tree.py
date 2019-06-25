@@ -48,4 +48,12 @@ class BinarySearchTree:
             return self.right.get_max()
 
     def for_each(self, cb):
-        pass
+        # if left, go left
+        if self.left:
+            self.left.for_each(cb)
+        # if right, go right
+        if self.right:
+            self.right.for_each(cb)
+        cb(self.value)
+        
+        
